@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19D9B1DE195BE8200054B540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D9B1DD195BE8200054B540 /* Foundation.framework */; };
+		19D9B1E0195BE8200054B540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D9B1DF195BE8200054B540 /* CoreGraphics.framework */; };
+		19D9B1E2195BE8200054B540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D9B1E1195BE8200054B540 /* UIKit.framework */; };
+		19D9B1E8195BE8200054B540 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19D9B1E6195BE8200054B540 /* InfoPlist.strings */; };
+		19D9B1EA195BE8200054B540 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D9B1E9195BE8200054B540 /* main.m */; };
+		19D9B1EE195BE8200054B540 /* HsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D9B1ED195BE8200054B540 /* HsAppDelegate.m */; };
+		19D9B1F0195BE8200054B540 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D9B1EF195BE8200054B540 /* Images.xcassets */; };
+		19D9B1F7195BE8200054B540 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D9B1F6195BE8200054B540 /* XCTest.framework */; };
+		19D9B1F8195BE8200054B540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D9B1DD195BE8200054B540 /* Foundation.framework */; };
+		19D9B1F9195BE8200054B540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D9B1E1195BE8200054B540 /* UIKit.framework */; };
+		19D9B201195BE8200054B540 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19D9B1FF195BE8200054B540 /* InfoPlist.strings */; };
+		19D9B203195BE8200054B540 /* ApnSettingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D9B202195BE8200054B540 /* ApnSettingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19D9B1FA195BE8200054B540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D9B1D2195BE81F0054B540 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19D9B1D9195BE8200054B540;
+			remoteInfo = ApnSetting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19D9B1DA195BE8200054B540 /* ApnSetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApnSetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D9B1DD195BE8200054B540 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19D9B1DF195BE8200054B540 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19D9B1E1195BE8200054B540 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19D9B1E5195BE8200054B540 /* ApnSetting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApnSetting-Info.plist"; sourceTree = "<group>"; };
+		19D9B1E7195BE8200054B540 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19D9B1E9195BE8200054B540 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19D9B1EB195BE8200054B540 /* ApnSetting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApnSetting-Prefix.pch"; sourceTree = "<group>"; };
+		19D9B1EC195BE8200054B540 /* HsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HsAppDelegate.h; sourceTree = "<group>"; };
+		19D9B1ED195BE8200054B540 /* HsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HsAppDelegate.m; sourceTree = "<group>"; };
+		19D9B1EF195BE8200054B540 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19D9B1F5195BE8200054B540 /* ApnSettingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApnSettingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D9B1F6195BE8200054B540 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19D9B1FE195BE8200054B540 /* ApnSettingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApnSettingTests-Info.plist"; sourceTree = "<group>"; };
+		19D9B200195BE8200054B540 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19D9B202195BE8200054B540 /* ApnSettingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApnSettingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19D9B1D7195BE8200054B540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D9B1E0195BE8200054B540 /* CoreGraphics.framework in Frameworks */,
+				19D9B1E2195BE8200054B540 /* UIKit.framework in Frameworks */,
+				19D9B1DE195BE8200054B540 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D9B1F2195BE8200054B540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D9B1F7195BE8200054B540 /* XCTest.framework in Frameworks */,
+				19D9B1F9195BE8200054B540 /* UIKit.framework in Frameworks */,
+				19D9B1F8195BE8200054B540 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19D9B1D1195BE81F0054B540 = {
+			isa = PBXGroup;
+			children = (
+				19D9B1E3195BE8200054B540 /* ApnSetting */,
+				19D9B1FC195BE8200054B540 /* ApnSettingTests */,
+				19D9B1DC195BE8200054B540 /* Frameworks */,
+				19D9B1DB195BE8200054B540 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19D9B1DB195BE8200054B540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D9B1DA195BE8200054B540 /* ApnSetting.app */,
+				19D9B1F5195BE8200054B540 /* ApnSettingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D9B1DC195BE8200054B540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D9B1DD195BE8200054B540 /* Foundation.framework */,
+				19D9B1DF195BE8200054B540 /* CoreGraphics.framework */,
+				19D9B1E1195BE8200054B540 /* UIKit.framework */,
+				19D9B1F6195BE8200054B540 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19D9B1E3195BE8200054B540 /* ApnSetting */ = {
+			isa = PBXGroup;
+			children = (
+				19D9B1EC195BE8200054B540 /* HsAppDelegate.h */,
+				19D9B1ED195BE8200054B540 /* HsAppDelegate.m */,
+				19D9B1EF195BE8200054B540 /* Images.xcassets */,
+				19D9B1E4195BE8200054B540 /* Supporting Files */,
+			);
+			path = ApnSetting;
+			sourceTree = "<group>";
+		};
+		19D9B1E4195BE8200054B540 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19D9B1E5195BE8200054B540 /* ApnSetting-Info.plist */,
+				19D9B1E6195BE8200054B540 /* InfoPlist.strings */,
+				19D9B1E9195BE8200054B540 /* main.m */,
+				19D9B1EB195BE8200054B540 /* ApnSetting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19D9B1FC195BE8200054B540 /* ApnSettingTests */ = {
+			isa = PBXGroup;
+			children = (
+				19D9B202195BE8200054B540 /* ApnSettingTests.m */,
+				19D9B1FD195BE8200054B540 /* Supporting Files */,
+			);
+			path = ApnSettingTests;
+			sourceTree = "<group>";
+		};
+		19D9B1FD195BE8200054B540 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19D9B1FE195BE8200054B540 /* ApnSettingTests-Info.plist */,
+				19D9B1FF195BE8200054B540 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19D9B1D9195BE8200054B540 /* ApnSetting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D9B206195BE8200054B540 /* Build configuration list for PBXNativeTarget "ApnSetting" */;
+			buildPhases = (
+				19D9B1D6195BE8200054B540 /* Sources */,
+				19D9B1D7195BE8200054B540 /* Frameworks */,
+				19D9B1D8195BE8200054B540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApnSetting;
+			productName = ApnSetting;
+			productReference = 19D9B1DA195BE8200054B540 /* ApnSetting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19D9B1F4195BE8200054B540 /* ApnSettingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19D9B209195BE8200054B540 /* Build configuration list for PBXNativeTarget "ApnSettingTests" */;
+			buildPhases = (
+				19D9B1F1195BE8200054B540 /* Sources */,
+				19D9B1F2195BE8200054B540 /* Frameworks */,
+				19D9B1F3195BE8200054B540 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19D9B1FB195BE8200054B540 /* PBXTargetDependency */,
+			);
+			name = ApnSettingTests;
+			productName = ApnSettingTests;
+			productReference = 19D9B1F5195BE8200054B540 /* ApnSettingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19D9B1D2195BE81F0054B540 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Hs;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					19D9B1F4195BE8200054B540 = {
+						TestTargetID = 19D9B1D9195BE8200054B540;
+					};
+				};
+			};
+			buildConfigurationList = 19D9B1D5195BE81F0054B540 /* Build configuration list for PBXProject "ApnSetting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19D9B1D1195BE81F0054B540;
+			productRefGroup = 19D9B1DB195BE8200054B540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19D9B1D9195BE8200054B540 /* ApnSetting */,
+				19D9B1F4195BE8200054B540 /* ApnSettingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19D9B1D8195BE8200054B540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D9B1E8195BE8200054B540 /* InfoPlist.strings in Resources */,
+				19D9B1F0195BE8200054B540 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D9B1F3195BE8200054B540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D9B201195BE8200054B540 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19D9B1D6195BE8200054B540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D9B1EA195BE8200054B540 /* main.m in Sources */,
+				19D9B1EE195BE8200054B540 /* HsAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19D9B1F1195BE8200054B540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19D9B203195BE8200054B540 /* ApnSettingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D9B1FB195BE8200054B540 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19D9B1D9195BE8200054B540 /* ApnSetting */;
+			targetProxy = 19D9B1FA195BE8200054B540 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19D9B1E6195BE8200054B540 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D9B1E7195BE8200054B540 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19D9B1FF195BE8200054B540 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19D9B200195BE8200054B540 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19D9B204195BE8200054B540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19D9B205195BE8200054B540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19D9B207195BE8200054B540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApnSetting/ApnSetting-Prefix.pch";
+				INFOPLIST_FILE = "ApnSetting/ApnSetting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19D9B208195BE8200054B540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApnSetting/ApnSetting-Prefix.pch";
+				INFOPLIST_FILE = "ApnSetting/ApnSetting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19D9B20A195BE8200054B540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ApnSetting.app/ApnSetting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApnSetting/ApnSetting-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ApnSettingTests/ApnSettingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		19D9B20B195BE8200054B540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ApnSetting.app/ApnSetting";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApnSetting/ApnSetting-Prefix.pch";
+				INFOPLIST_FILE = "ApnSettingTests/ApnSettingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19D9B1D5195BE81F0054B540 /* Build configuration list for PBXProject "ApnSetting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D9B204195BE8200054B540 /* Debug */,
+				19D9B205195BE8200054B540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19D9B206195BE8200054B540 /* Build configuration list for PBXNativeTarget "ApnSetting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D9B207195BE8200054B540 /* Debug */,
+				19D9B208195BE8200054B540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		19D9B209195BE8200054B540 /* Build configuration list for PBXNativeTarget "ApnSettingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19D9B20A195BE8200054B540 /* Debug */,
+				19D9B20B195BE8200054B540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19D9B1D2195BE81F0054B540 /* Project object */;
+}
