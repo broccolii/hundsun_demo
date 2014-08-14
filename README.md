@@ -6,3 +6,5 @@ hundsun_demo
 
 后续会对demo有更详细的整理。核心代码在hundsun_core里面哦
 还有手势右滑返回功能。
+
+因写demo仓促，有不足之处请指出。该demo部分功能有在项目成功运用。
