@@ -63,27 +63,53 @@
     self.tableView.tableHeaderView = self.headView;
     self.tableView.tableFooterView = self.footView;
     
+    
+    if([HsUserConfig login]){
+        [self setup];
+    }else{
+        //模拟网络
+        [self.view showLoading];
+        WEAKSELF
+        GCD_AfterBlock(^{
+            //设置注销按钮
+            weakSelf.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"登陆" target:self action:@selector(login)];
+            //显示出控件
+            weakSelf.tableView.hidden = YES;
+            [weakSelf.view showEmptyTitle:@"未登陆，请先登陆" clickBlock:^{
+                //goto login
+            }];
+            
+        }, 2.0f);
+        
+        
+        //用下面的网络请求 在界面消失后网络也主动取消，不用做任何操作
+        /*
+        [self.view urlForTag:@"url" completionHandler:^(NSDictionary *dic){
+        
+        } errorHandler:^(NSError *error){
+        
+        }];
+         */
+        
+        //用下面的网络请求不会在界面消失主动断开
+        
+        /**
+         
+        [[HsNetworkEngine netWorkEngine] urlForTag:@"" completionHandler:^(NSDictionary *dic){
+        
+        
+        } errorHandler:^(NSError *error){
+        
+        }];
+         **/
+    }
+
+    
 }
 
 //隐藏导航下分隔线
 - (BOOL)hideShadowImage{
     return YES;
-}
-
-//登陆成功后会执行sendReload通知界面刷新
-//在刷新方法进行布局  可以及时刷新
-- (void)viewDidLayoutWithLogin{
-    if([HsUserConfig login]){
-        [self setup];
-    }else{
-        //设置注销按钮
-        self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"登陆" target:self action:@selector(login)];
-        //显示出控件
-        self.tableView.hidden = YES;
-        [self.view showEmptyTitle:@"未登陆，请先登陆" clickBlock:^{
-           //goto login
-        }];
-    }
 }
 
 //渲染视图

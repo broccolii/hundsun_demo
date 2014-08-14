@@ -34,11 +34,11 @@
 		</dict>
 		<dict>
 			<key>controllerClass</key>
-			<string>HsStartViewController</string>
+			<string>HsAccountViewController</string>
 			<key>itemTag</key>
 			<string>2</string>
 			<key>itemText</key>
-			<string>test2</string>
+			<string>账户</string>
 			<key>itemImage</key>
 			<string>index_km_grey</string>
 			<key>itemSelectedImage</key>
