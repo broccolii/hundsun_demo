@@ -1,0 +1,9 @@
+/* 
+  String_test.strings
+  hundsun_demo
+
+  Created by 王金东 on 14-8-14.
+  Copyright (c) 2014年 王金东. All rights reserved.
+*/
+
+hello = "我是测试";

@@ -14,6 +14,7 @@
 #import "HsSampleIndexViewController.h"
 #import "HsViewController.h"
 #import "ShowAllImageViewController.h"
+#import "HsFileSystemViewController.h"
 
 typedef void(^ClickBlock)(NSString *title);
 
@@ -99,6 +100,11 @@ typedef void(^ClickBlock)(NSString *title);
         ShowAllImageViewController *controller  = [[ShowAllImageViewController alloc] init];
         controller.title = title;
         [self.navigationController pushViewController:controller animated:YES];
+    }],[MenuInfo menuWithTitile:@"特色文件系统" click:^(NSString *title){
+        HsFileSystemViewController *controller = [[HsFileSystemViewController alloc] init];
+        controller.title = title;
+        [self.navigationController pushViewController:controller animated:YES];
+        
     }],nil];
 }
 

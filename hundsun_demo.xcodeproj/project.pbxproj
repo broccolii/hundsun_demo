@@ -197,6 +197,9 @@
 		4DB01DC5199C444A007300F8 /* HsSampleIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB01DC4199C444A007300F8 /* HsSampleIndexViewController.m */; };
 		4DB01DC7199C47D5007300F8 /* richText.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4DB01DC6199C47D5007300F8 /* richText.txt */; };
 		4DB01DCA199C5347007300F8 /* HsUITableView3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB01DC9199C5347007300F8 /* HsUITableView3ViewController.m */; };
+		4DB01DCE199C58F2007300F8 /* HsFileSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB01DCD199C58F2007300F8 /* HsFileSystemViewController.m */; };
+		4DB01DD0199C595D007300F8 /* String_test.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DB01DCF199C595D007300F8 /* String_test.strings */; };
+		4DB01DD2199C5990007300F8 /* Color_test.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DB01DD1199C5990007300F8 /* Color_test.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -564,6 +567,10 @@
 		4DB01DC6199C47D5007300F8 /* richText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = richText.txt; sourceTree = "<group>"; };
 		4DB01DC8199C5347007300F8 /* HsUITableView3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HsUITableView3ViewController.h; sourceTree = "<group>"; };
 		4DB01DC9199C5347007300F8 /* HsUITableView3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HsUITableView3ViewController.m; sourceTree = "<group>"; };
+		4DB01DCC199C58F2007300F8 /* HsFileSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HsFileSystemViewController.h; sourceTree = "<group>"; };
+		4DB01DCD199C58F2007300F8 /* HsFileSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HsFileSystemViewController.m; sourceTree = "<group>"; };
+		4DB01DCF199C595D007300F8 /* String_test.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = String_test.strings; sourceTree = "<group>"; };
+		4DB01DD1199C5990007300F8 /* Color_test.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Color_test.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1264,6 +1271,8 @@
 			children = (
 				4DB01C57199C39BE007300F8 /* Color_zjfae.strings */,
 				4DB01C58199C39BE007300F8 /* String_zjfae.strings */,
+				4DB01DCF199C595D007300F8 /* String_test.strings */,
+				4DB01DD1199C5990007300F8 /* Color_test.strings */,
 			);
 			path = "私有文件";
 			sourceTree = "<group>";
@@ -1280,8 +1289,9 @@
 		4DB01D68199C40D8007300F8 /* 布局 */ = {
 			isa = PBXGroup;
 			children = (
-				4DB01D69199C40EB007300F8 /* HsWelcomeTableViewController.h */,
 				4DB01D6A199C40EB007300F8 /* HsWelcomeTableViewController.m */,
+				4DB01D69199C40EB007300F8 /* HsWelcomeTableViewController.h */,
+				4DB01DCB199C58DA007300F8 /* 文件系统 */,
 				4DB01D99199C4208007300F8 /* hsRefreshController */,
 				4DB01D86199C41C9007300F8 /* HsViewController.h */,
 				4DB01DC0199C427D007300F8 /* ShowAllImageViewController.h */,
@@ -1339,6 +1349,15 @@
 				4DB01DAA199C4208007300F8 /* HsSampleIndex.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4DB01DCB199C58DA007300F8 /* 文件系统 */ = {
+			isa = PBXGroup;
+			children = (
+				4DB01DCC199C58F2007300F8 /* HsFileSystemViewController.h */,
+				4DB01DCD199C58F2007300F8 /* HsFileSystemViewController.m */,
+			);
+			path = "文件系统";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1423,10 +1442,12 @@
 				4DB01CF5199C39BE007300F8 /* myappconfig_zjfae.plist in Resources */,
 				4DB01CF9199C39BE007300F8 /* blue.css in Resources */,
 				4DB01D70199C4105007300F8 /* HsLinearLayoutViewController.xib in Resources */,
+				4DB01DD0199C595D007300F8 /* String_test.strings in Resources */,
 				4DB01D0B199C39BE007300F8 /* Color_zjfae.strings in Resources */,
 				4DB01D8A199C41C9007300F8 /* HsViewController.xib in Resources */,
 				4DB01CF7199C39BE007300F8 /* UISetting.plist in Resources */,
 				4DB01CFC199C39BE007300F8 /* white.css in Resources */,
+				4DB01DD2199C5990007300F8 /* Color_test.strings in Resources */,
 				4DB01D0C199C39BE007300F8 /* String_zjfae.strings in Resources */,
 				4DB01CF1199C39BE007300F8 /* Color.strings in Resources */,
 				4DB017CC199C3732007300F8 /* InfoPlist.strings in Resources */,
@@ -1562,6 +1583,7 @@
 				4DB01DB9199C4208007300F8 /* HsTableView1ViewController.m in Sources */,
 				4DB01BA9199C37C2007300F8 /* MMHud.m in Sources */,
 				4DB01B8D199C37C2007300F8 /* HsUISegment.m in Sources */,
+				4DB01DCE199C58F2007300F8 /* HsFileSystemViewController.m in Sources */,
 				4DB01B8F199C37C2007300F8 /* HsUISegmentControl.m in Sources */,
 				4DB01B6D199C37C2007300F8 /* UIView+empty.m in Sources */,
 				4DB01B74199C37C2007300F8 /* HsDatePicker.m in Sources */,
