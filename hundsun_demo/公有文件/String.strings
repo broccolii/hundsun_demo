@@ -1,0 +1,24 @@
+/* 
+  String.strings
+ //存放字符串
+  Created by 王金东 on 14-6-24.
+  Copyright (c) 2014年 王金东. All rights reserved.
+*/
+
+InviteTitle = "我现正在使用%@，您也来试试吧。客户下载地址：";
+Company = "恒生电子股份有限公司";
+
+//设置tabbar的委托类 其值只能是HsTabBarDelegate的子类
+tabBarDelegate = "HsTabBarDelegate";
+
+
+//支付时注意事项
+payAttention = "轻触上面\"确认购买\"按钮，即表示您同意<a href=1>《募集说明书》</a>、<a href=2>《风险说明书》</a>和<a href=3>《认购协议》</a>。";
+
+//注册时注意事项
+registerAttention = "轻触上面\"注册\"按钮，即表示您同意<a href=4>《会员服务协议》</a>";
+
+
+//css
+parentThemeName = "default.css";
+themeName = "default.css";

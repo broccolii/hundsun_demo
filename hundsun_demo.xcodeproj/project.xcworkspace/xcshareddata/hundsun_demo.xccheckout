@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DF3DE16A-AB69-43CD-B73A-750D2FEA947B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>hundsun_demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A713AE8-C0FC-4B0C-91D3-430F61E3F310</key>
+		<string>https://cm07.hundsun.com/HG/ZJFAEAPP/trunk/Sources/ios</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hundsun_demo/hundsun_demo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A713AE8-C0FC-4B0C-91D3-430F61E3F310</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>2A713AE8-C0FC-4B0C-91D3-430F61E3F310</key>
+		<string>https://cm07.hundsun.com/HG/ZJFAEAPP</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://cm07.hundsun.com/HG/ZJFAEAPP/trunk/Sources/ios/hundsun_demo/hundsun_demo.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A713AE8-C0FC-4B0C-91D3-430F61E3F310</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A713AE8-C0FC-4B0C-91D3-430F61E3F310</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hundsun_zjfae</string>
+		</dict>
+	</array>
+</dict>
+</plist>

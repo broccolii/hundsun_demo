@@ -1,0 +1,31 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "fill",
+          "width" : 19,
+          "height" : 56
+        },
+        "capInsets" : {
+          "bottom" : 13,
+          "top" : 13,
+          "right" : 9,
+          "left" : 12
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "button_gray@2x.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

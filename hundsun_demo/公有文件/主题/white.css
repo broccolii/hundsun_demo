@@ -1,0 +1,34 @@
+
+// 导航条设置颜色
+UINavigationBar {
+  background-color: #ffffff;
+  -ios-tint-color: #000000;
+  -ios-status-bar-style: 0;
+  color: #000000;
+}
+
+//选项卡设置
+UITabBar {
+ -ios-bar-color: #ffffff;
+ -ios-tint-color: #111111;
+  color: #cecece;
+}
+
+//内容背景
+.background {
+  background-color: #ffffff;
+}
+
+//我的账户head颜色
+.accountHeadBackgournd{
+    background-color: #ffffff;
+}
+
+//我的账户head里面的字体颜色
+.accountHeadTipText{
+    color: #000000;
+}
+.accountHeadText{
+    color: #000000;
+}
+

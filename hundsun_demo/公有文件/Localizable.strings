@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+"Previous" = "前一项";
+"Next" = "下一项";
+"Done" = "完成";
+"Close" = "关闭";
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>indexViewController</key>
+	<array>
+		<dict>
+			<key>controllerClass</key>
+			<string>HsStartViewController</string>
+			<key>itemTag</key>
+			<integer>0</integer>
+			<key>itemText</key>
+			<string>欢迎</string>
+			<key>itemImage</key>
+			<string>index_km_grey</string>
+			<key>itemSelectedImage</key>
+			<string>index_km_grey</string>
+			<key>itemClickSelector</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>controllerClass</key>
+			<string>HsWelcomeTableViewController</string>
+			<key>itemTag</key>
+			<string>1</string>
+			<key>itemText</key>
+			<string>布局</string>
+			<key>itemImage</key>
+			<string>index_km_grey</string>
+			<key>itemSelectedImage</key>
+			<string>index_km_grey</string>
+			<key>itemClickSelector</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>controllerClass</key>
+			<string>HsStartViewController</string>
+			<key>itemTag</key>
+			<string>2</string>
+			<key>itemText</key>
+			<string>test2</string>
+			<key>itemImage</key>
+			<string>index_km_grey</string>
+			<key>itemSelectedImage</key>
+			<string>index_km_grey</string>
+			<key>itemClickSelector</key>
+			<string>login</string>
+		</dict>
+		<dict>
+			<key>controllerClass</key>
+			<string>HsMoreThemeViewController</string>
+			<key>itemTag</key>
+			<string>3</string>
+			<key>itemText</key>
+			<string>主题</string>
+			<key>itemImage</key>
+			<string>index_km_grey</string>
+			<key>itemSelectedImage</key>
+			<string>index_km_grey</string>
+			<key>itemClickSelector</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>
