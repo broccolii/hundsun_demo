@@ -8,6 +8,7 @@
 
 #import "HsMoreThemeViewController.h"
 #import "HsThemeManager.h"
+#import "StatusBarWindow.h"
 
 
 @interface HsMoreThemeViewController ()
@@ -40,6 +41,8 @@
 
 - (void)baseTableView:(HsBaseTableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *dic = self.itemsArray[indexPath.row];
+    
+    [[StatusBarWindow sharedInstance] showSingleLineMessage:@"我更改了设置哦！"];
     //设置主题
     [HsThemeManager shareInstance].themeName = dic[@"themeName"];
 }

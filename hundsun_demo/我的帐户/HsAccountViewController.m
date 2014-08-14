@@ -71,7 +71,9 @@
     }
     
 }
-
+- (BOOL)hideShadowImage{
+    return YES;
+}
 
 - (void)loadData{
     //模拟网络

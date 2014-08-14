@@ -46,6 +46,12 @@ extern NSString *const ViewControllerReLoginView;
 - (void)popViewController;
 
 
+/**
+ * 隐藏导航下分隔线
+ **/
+- (BOOL)hideShadowImage;
+
+
 @end
 
 
