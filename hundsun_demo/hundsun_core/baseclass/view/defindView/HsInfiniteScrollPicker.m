@@ -1,8 +1,5 @@
-//
-//  JCTopic.m
-//  PSCollectionViewDemo
-//
-//  Created by jc on 14-1-7.
+// 
+//  Created by wjd on 14-1-7.
 //
 //
 
