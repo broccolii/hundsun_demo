@@ -60,6 +60,11 @@ typedef void(^ClickBlock)(NSString *title);
         controller.title = title;
         [self.navigationController pushViewController:controller animated:YES];
     }],
+    [MenuInfo menuWithTitile:@"封装的UITableView" click:^(NSString *title){
+        HsSampleIndexViewController *controller = [[HsSampleIndexViewController alloc] init];
+        controller.title = title;
+        [self.navigationController pushViewController:controller animated:YES];
+    }],
     [MenuInfo menuWithTitile:@"grid布局" click:^(NSString *title){
         HsGridViewController *controller = [[HsGridViewController alloc] init];
         controller.title = title;
@@ -82,11 +87,6 @@ typedef void(^ClickBlock)(NSString *title);
     }],
     [MenuInfo menuWithTitile:@"tab视图" click:^(NSString *title){
         HsSegmentViewController *controller = [[HsSegmentViewController alloc] init];
-        controller.title = title;
-        [self.navigationController pushViewController:controller animated:YES];
-    }],
-    [MenuInfo menuWithTitile:@"上（下）拉刷新" click:^(NSString *title){
-        HsSampleIndexViewController *controller = [[HsSampleIndexViewController alloc] init];
         controller.title = title;
         [self.navigationController pushViewController:controller animated:YES];
     }],

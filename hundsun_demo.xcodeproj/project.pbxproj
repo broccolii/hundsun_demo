@@ -196,6 +196,7 @@
 		4DB01DC2199C427D007300F8 /* ShowAllImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB01DC1199C427D007300F8 /* ShowAllImageViewController.m */; };
 		4DB01DC5199C444A007300F8 /* HsSampleIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB01DC4199C444A007300F8 /* HsSampleIndexViewController.m */; };
 		4DB01DC7199C47D5007300F8 /* richText.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4DB01DC6199C47D5007300F8 /* richText.txt */; };
+		4DB01DCA199C5347007300F8 /* HsUITableView3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB01DC9199C5347007300F8 /* HsUITableView3ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -561,6 +562,8 @@
 		4DB01DC3199C444A007300F8 /* HsSampleIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HsSampleIndexViewController.h; sourceTree = "<group>"; };
 		4DB01DC4199C444A007300F8 /* HsSampleIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HsSampleIndexViewController.m; sourceTree = "<group>"; };
 		4DB01DC6199C47D5007300F8 /* richText.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = richText.txt; sourceTree = "<group>"; };
+		4DB01DC8199C5347007300F8 /* HsUITableView3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HsUITableView3ViewController.h; sourceTree = "<group>"; };
+		4DB01DC9199C5347007300F8 /* HsUITableView3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HsUITableView3ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1312,6 +1315,8 @@
 		4DB01D99199C4208007300F8 /* hsRefreshController */ = {
 			isa = PBXGroup;
 			children = (
+				4DB01DC8199C5347007300F8 /* HsUITableView3ViewController.h */,
+				4DB01DC9199C5347007300F8 /* HsUITableView3ViewController.m */,
 				4DB01D9E199C4208007300F8 /* HsRefreshTableViewController.h */,
 				4DB01D9F199C4208007300F8 /* HsRefreshTableViewController.m */,
 				4DB01DC3199C444A007300F8 /* HsSampleIndexViewController.h */,
@@ -1565,6 +1570,7 @@
 				4DB01B81199C37C2007300F8 /* HsPhotoBrowser.m in Sources */,
 				4DB01B62199C37C2007300F8 /* UIView+animal.m in Sources */,
 				4DB01B72199C37C2007300F8 /* HsLocationManager.m in Sources */,
+				4DB01DCA199C5347007300F8 /* HsUITableView3ViewController.m in Sources */,
 				4DB01B7B199C37C2007300F8 /* HsUIGridViewCell.m in Sources */,
 				4DB01BA6199C37C2007300F8 /* MKNetworkEngine.m in Sources */,
 				4DB01B60199C37C2007300F8 /* UITableView+convenience.m in Sources */,
@@ -1829,6 +1835,7 @@
 				4DB017EC199C3732007300F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DB017ED199C3732007300F8 /* Build configuration list for PBXNativeTarget "hundsun_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -1837,6 +1844,7 @@
 				4DB017EF199C3732007300F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

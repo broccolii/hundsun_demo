@@ -30,7 +30,7 @@
         NSLog(@"删除第%d行",(int)indexPath.row);
     };
     self.sectionable = YES;//二级列表要开启
-        [self.itemsArray addObject:[NSMutableArray arrayWithObjects:@"我是1",@"我是12",@"我是13",@"我是14",@"我是15",@"我是16", nil]];
+    [self.itemsArray addObject:[NSMutableArray arrayWithObjects:@"我是1",@"我是12",@"我是13",@"我是14",@"我是15",@"我是16", nil]];
       [self.itemsArray addObject:[NSMutableArray arrayWithObjects:@"我是2",@"我是21",@"我是22",@"我是23",@"我是24",@"我是25",@"我是26", nil]];
       [self.itemsArray addObject:[NSMutableArray arrayWithObjects:@"我是3",@"我是31",@"我是32",@"我是33",@"我是34",@"我是35",@"我是36", nil]];
       [self.itemsArray addObject:[NSMutableArray arrayWithObjects:@"我是4",@"我是41",@"我是42",@"我是43",@"我是44",@"我是45", nil]];
@@ -40,7 +40,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+- (NSString *)baseTableView:(HsBaseTableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return @"测试";
 }
 

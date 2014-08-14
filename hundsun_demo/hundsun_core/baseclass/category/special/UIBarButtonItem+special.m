@@ -45,6 +45,9 @@ static const void *editAction_tableview_Key = &editAction_tableview_Key;
         if([view isKindOfClass:[UIButton class]]){
             UIButton *btn = (UIButton *)view;
             [btn addTarget:item action:@selector(editAction:) forControlEvents:UIControlEventTouchUpInside];
+        }else{
+            item.target = item;
+            item.action = @selector(editAction:);
         }
         if(block != nil){
             objc_setAssociatedObject(item, editAction_block_Key, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
@@ -56,17 +59,29 @@ static const void *editAction_tableview_Key = &editAction_tableview_Key;
     return item;
 }
 
-- (void)editAction:(UIButton *)btn{
+- (void)editAction:(UIView *)view{
     EditActionBlock block = objc_getAssociatedObject(self, editAction_block_Key);
     UITableView *tableview = objc_getAssociatedObject(self, editAction_tableview_Key);
     BOOL flag = YES;
-    if(btn.tag == 0){
-        [btn setTitle:@"完成" forState:UIControlStateNormal];
-        btn.tag = 1;
+    if(view.tag == 0){
+        if([view isKindOfClass:[UIButton class]]){
+            UIButton *btn = (UIButton *)view;
+            [btn setTitle:@"完成" forState:UIControlStateNormal];
+        }else{
+            UIBarButtonItem *item = (UIBarButtonItem *)view;
+            item.title = @"完成";
+        }
+        view.tag = 1;
         flag = YES;
     }else{
-        [btn setTitle:@"编辑" forState:UIControlStateNormal];
-        btn.tag = 0;
+        if([view isKindOfClass:[UIButton class]]){
+            UIButton *btn = (UIButton *)view;
+            [btn setTitle:@"编辑" forState:UIControlStateNormal];
+        }else{
+            UIBarButtonItem *item = (UIBarButtonItem *)view;
+            item.title = @"编辑";
+        }
+        view.tag = 0;
         flag = NO;
     }
     if(block != nil){

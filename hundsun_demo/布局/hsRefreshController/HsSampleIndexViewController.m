@@ -13,6 +13,7 @@
 #import "HsRefreshTableViewController.h"
 #import "HsTableView1ViewController.h"
 #import "HsTableView2ViewController.h"
+#import "HsUITableView3ViewController.h"
 
 NSString *const HsSampleIndexCellIdentifier = @"Cell";
 
@@ -35,10 +36,12 @@ NSString *const HsSampleIndexCellIdentifier = @"Cell";
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:HsSampleIndexCellIdentifier];
     
     // 2.初始化数据
-    HsSampleIndex *si1 = [HsSampleIndex sampleIndexWithTitle:@"tableView刷新演示" controllerClass:[HsRefreshTableViewController class]];
-    HsSampleIndex *si2 = [HsSampleIndex sampleIndexWithTitle:@"封装好的tableviewcontroller" controllerClass:[HsTableView1ViewController class]];
-     HsSampleIndex *si3 = [HsSampleIndex sampleIndexWithTitle:@"封装好的二级tableviewcontroller" controllerClass:[HsTableView2ViewController class]];
-    _sampleIndexs = @[si1,si2,si3];
+    
+    HsSampleIndex *si1 = [HsSampleIndex sampleIndexWithTitle:@"一行代码显示UITableview" controllerClass:[HsTableView1ViewController class]];
+    HsSampleIndex *si2 = [HsSampleIndex sampleIndexWithTitle:@"tableView刷新演示" controllerClass:[HsRefreshTableViewController class]];
+    HsSampleIndex *si3 = [HsSampleIndex sampleIndexWithTitle:@"二级带删除的tableview" controllerClass:[HsTableView2ViewController class]];
+     HsSampleIndex *si4 = [HsSampleIndex sampleIndexWithTitle:@"多行同时删除tableviewcontroller" controllerClass:[HsUITableView3ViewController class]];
+    _sampleIndexs = @[si1,si2,si3,si4];
 }
 
 #pragma mark - Table view data source

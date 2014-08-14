@@ -41,7 +41,7 @@
 
 - (HsUIGridViewCell*)gridView:(HsUIGridView*)gridview cellAtInSection:(NSIndexPath*)indepath{
     HsUIGridViewCell *cell = [[HsUIGridViewCell alloc] initWithStyle:GridViewCellStyleWithImage];
-    cell.imageView.image = [UIImage imageNamed:@"0"];
+    cell.imageView.image = [UIImage imageNamed:@"0.jpg"];
     cell.imageMargin = HsUIGridViewPadingMake(10, 20, 5, 20);
     cell.content.text = @"哈哈哈哈";
     return cell;
