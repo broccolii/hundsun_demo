@@ -38,9 +38,9 @@ NSString *const HsSampleIndexCellIdentifier = @"Cell";
     // 2.初始化数据
     
     HsSampleIndex *si1 = [HsSampleIndex sampleIndexWithTitle:@"一行代码显示UITableview" controllerClass:[HsTableView1ViewController class]];
-    HsSampleIndex *si2 = [HsSampleIndex sampleIndexWithTitle:@"tableView刷新演示" controllerClass:[HsRefreshTableViewController class]];
-    HsSampleIndex *si3 = [HsSampleIndex sampleIndexWithTitle:@"二级带删除的tableview" controllerClass:[HsTableView2ViewController class]];
-     HsSampleIndex *si4 = [HsSampleIndex sampleIndexWithTitle:@"多行同时删除tableviewcontroller" controllerClass:[HsUITableView3ViewController class]];
+    HsSampleIndex *si2 = [HsSampleIndex sampleIndexWithTitle:@"一行代码tableView刷新演示" controllerClass:[HsRefreshTableViewController class]];
+    HsSampleIndex *si3 = [HsSampleIndex sampleIndexWithTitle:@"一行代码二级带删除的tableview" controllerClass:[HsTableView2ViewController class]];
+     HsSampleIndex *si4 = [HsSampleIndex sampleIndexWithTitle:@"一行代码多行同时删除tableviewcontroller" controllerClass:[HsUITableView3ViewController class]];
     _sampleIndexs = @[si1,si2,si3,si4];
 }
 
