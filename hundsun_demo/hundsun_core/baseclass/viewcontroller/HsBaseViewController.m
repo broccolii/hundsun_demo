@@ -107,31 +107,7 @@ NSString *const ViewControllerReLoginView = @"ViewControllerReLoginView";
             [_dom updateStylesheet:stylesheet];
         }
         [_dom refresh];
-    
-      if([self hideShadowImage]){
-           [self.navigationController.navigationBar setTranslucent:NO];
-           NICSSRuleset *ruleset = [_dom rulesetforClass:@"UINavigationBar"];
-           UIColor *barColor =   [ruleset colorFromCssRuleForKey:@"background-color"];
-           if(IOS7){
-             [self.navigationController.navigationBar setBackgroundImage:[UIImage createImageWithColor:barColor] forBarMetrics:UIBarMetricsDefault];
-           }else{
-              [self.navigationController.navigationBar setBackgroundImage:[UIImage createImageWithColor:barColor] forBarMetrics:UIBarMetricsDefault];
-             [self.navigationController.navigationBar.layer setMasksToBounds:YES];
-           }
-          if ([UINavigationBar instancesRespondToSelector:@selector(setShadowImage:)]){
-              [self.navigationController.navigationBar setShadowImage:[UIImage createImageWithColor:barColor size:CGSizeMake(self.view.frame.size.width, 3)]];
-          }
-      }
 }
-
-/**
- * 隐藏导航下分隔线
- **/
-- (BOOL)hideShadowImage{
-    return NO;
-}
-
-
 
 - (void)viewDidLayoutWithLogin{
     

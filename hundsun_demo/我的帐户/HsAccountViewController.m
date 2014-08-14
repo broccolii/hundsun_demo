@@ -107,11 +107,6 @@
     
 }
 
-//隐藏导航下分隔线
-- (BOOL)hideShadowImage{
-    return YES;
-}
-
 //渲染视图
 - (void)setup{
     //显示出控件
