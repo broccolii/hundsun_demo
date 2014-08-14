@@ -13,6 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    BOOL flag = [super application:application didFinishLaunchingWithOptions:launchOptions];
+    
     //给imageview加网络实体
     [UIImageView setDefaultEngine:[HsNetworkEngine defaultEngine]];
     
@@ -30,7 +32,7 @@
     [HsThemeManager shareInstance];
     
     //需要实现
-    return [super application:application didFinishLaunchingWithOptions:launchOptions];
+    return flag;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

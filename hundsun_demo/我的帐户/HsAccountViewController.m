@@ -67,46 +67,49 @@
     if([HsUserConfig login]){
         [self setup];
     }else{
-        //模拟网络
-        [self.view showLoading];
-        WEAKSELF
-        GCD_AfterBlock(^{
-            //设置注销按钮
-            weakSelf.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"登陆" target:self action:@selector(login)];
-            //显示出控件
-            weakSelf.tableView.hidden = YES;
-            [weakSelf.view showEmptyTitle:@"未登陆，请先登陆" clickBlock:^{
-                //goto login
-            }];
-            
-        }, 2.0f);
-        
-        
-        //用下面的网络请求 在界面消失后网络也主动取消，不用做任何操作
-        /*
-        [self.view urlForTag:@"url" completionHandler:^(NSDictionary *dic){
-        
-        } errorHandler:^(NSError *error){
-        
-        }];
-         */
-        
-        //用下面的网络请求不会在界面消失主动断开
-        
-        /**
-         
-        [[HsNetworkEngine netWorkEngine] urlForTag:@"" completionHandler:^(NSDictionary *dic){
-        
-        
-        } errorHandler:^(NSError *error){
-        
-        }];
-         **/
+        [self loadData];
     }
-
     
 }
 
+
+- (void)loadData{
+    //模拟网络
+    [self.view showLoading];
+    WEAKSELF
+    GCD_AfterBlock(^{
+        //设置注销按钮
+        weakSelf.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTitle:@"登陆" target:self action:@selector(login)];
+        //显示出控件
+        weakSelf.tableView.hidden = YES;
+        [weakSelf.view showEmptyTitle:@"未登陆，请先登陆" clickBlock:^{
+            [self loadData];
+        }];
+        
+    }, 2.0f);
+    
+    //用下面的网络请求 在界面消失后网络也主动取消，不用做任何操作
+    /*
+     [self.view urlForTag:@"url" completionHandler:^(NSDictionary *dic){
+     
+     } errorHandler:^(NSError *error){
+     
+     }];
+     */
+    
+    //用下面的网络请求不会在界面消失主动断开
+    
+    /**
+     
+     [[HsNetworkEngine netWorkEngine] urlForTag:@"" completionHandler:^(NSDictionary *dic){
+     
+     
+     } errorHandler:^(NSError *error){
+     
+     }];
+     **/
+
+}
 //渲染视图
 - (void)setup{
     //显示出控件
@@ -164,6 +167,8 @@
 #pragma mark 事件
 //登陆
 - (void)login{
+    [self.view hideEmptyView];
+    [self setup];
    //goto login
 }
 //显示消息
