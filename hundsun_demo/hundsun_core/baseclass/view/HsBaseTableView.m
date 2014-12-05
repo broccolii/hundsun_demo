@@ -387,13 +387,13 @@ NSString *const HsBaseTableViewKeyTypeForRow = @"typeForRow";
 }
 
 - (void)scrollViewDidScroll:(HsBaseTableView *)tableView{
-    if(tableView.baseDelegate && [tableView.baseDelegate respondsToSelector:@selector(baseTableViewDidScroll:)]){
+    if([tableView isKindOfClass:[HsBaseTableView class]] && tableView.baseDelegate && [tableView.baseDelegate respondsToSelector:@selector(baseTableViewDidScroll:)]){
         [tableView.baseDelegate baseTableViewDidScroll:tableView];
     }
 }
 
 - (void)scrollViewDidEndDecelerating:(HsBaseTableView *)tableView{
-    if(tableView.baseDelegate && [tableView.baseDelegate respondsToSelector:@selector(baseTableViewDidEndDecelerating:)]){
+    if([tableView isKindOfClass:[HsBaseTableView class]] && tableView.baseDelegate && [tableView.baseDelegate respondsToSelector:@selector(baseTableViewDidEndDecelerating:)]){
         [tableView.baseDelegate baseTableViewDidEndDecelerating:tableView];
     }
 }
