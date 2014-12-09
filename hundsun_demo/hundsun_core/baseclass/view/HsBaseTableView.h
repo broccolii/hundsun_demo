@@ -112,7 +112,8 @@ extern NSString *const HsBaseTableViewKeyTypeForRow;
 @property (nonatomic,strong) NSString *keyForDetailView;
 
 
-
+//是否支持自动布局 默认不支持
+@property (nonatomic,assign) BOOL autoLayout;
 
 /**
  ** 延迟一会取消选中状态

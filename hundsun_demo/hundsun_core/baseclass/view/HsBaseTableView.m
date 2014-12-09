@@ -130,6 +130,15 @@ NSString *const HsBaseTableViewKeyTypeForRow = @"typeForRow";
     return _itemsArray;
 }
 
+//设置支持自动布局 让cell高度自动适配
+- (void)setAutoLayout:(BOOL)autoLayout{
+    _autoLayout = autoLayout;
+    if (autoLayout && IOS7) {
+        self.estimatedRowHeight = 44.0;
+        self.rowHeight = UITableViewAutomaticDimension;
+    }
+}
+
 @end
 
 #pragma mark ---------------------我是分割线------------------------------
@@ -313,12 +322,15 @@ NSString *const HsBaseTableViewKeyTypeForRow = @"typeForRow";
 }
 
 - (CGFloat)tableView:(HsBaseTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (tableView.autoLayout) {
+        return -1.0f;
+    }
     if(tableView.baseDelegate && [tableView.baseDelegate respondsToSelector:@selector(baseTableView:heightForRowAtIndexPath:)]){
         return [tableView.baseDelegate baseTableView:tableView heightForRowAtIndexPath:indexPath];
     }else{
         //将计算高度的方法交给cell来处理
         //生成cellid
-        NSString *cellID = [_cellID stringByAppendingFormat:@"_%d",[self tableView:tableView typeForRowAtIndexPath:indexPath]];
+        NSString *cellID = [_cellID stringByAppendingFormat:@"_%ld",[self tableView:tableView typeForRowAtIndexPath:indexPath]];
         HsBaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
         if(cell != nil){
             cell.indexPath = indexPath;
@@ -397,6 +409,7 @@ NSString *const HsBaseTableViewKeyTypeForRow = @"typeForRow";
         [tableView.baseDelegate baseTableViewDidEndDecelerating:tableView];
     }
 }
+
 
 @end
 
